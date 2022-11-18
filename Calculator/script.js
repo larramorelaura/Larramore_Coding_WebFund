@@ -1,8 +1,7 @@
 
 var calculator = {
-    displayValue: "0",
+    answer: "0",
     firstNumber : "0",
-    done: false,
     operator: null,
     secondNumber : "0"
 };
@@ -14,14 +13,15 @@ var answer= 0;
 var display= document.querySelector('#display');
 
 function press(num){
+    if(display.innerText=="0" || calculator.answer>0){
+        display.innerText ="";
+    }
+    calculator.answer="0";
     display.innerText += num;
-
 } 
 
 function setOP(op){
-    calculator.done = true;
     calculator.operator = op;
-    calculator.displayValue= display.innerText;
     calculator.firstNumber= display.innerText;
     console.log(calculator);
     display.innerText= "0";
@@ -30,23 +30,30 @@ function setOP(op){
 function calculate(){
     calculator.secondNumber= display.innerText;
     console.log(calculator);
-    newFirst= parseInt(calculator.firstNumber, 10)
-    newSecond= parseInt(calculator.secondNumber, 10)
+    newFirst= parseFloat(calculator.firstNumber);
+    newSecond= parseFloat(calculator.secondNumber);
     if (calculator.operator == '+'){
-        answer = newFirst + newSecond;
+        answer = (newFirst.toFixed(8) *100000000 + newSecond.toFixed(8)* 100000000) / 100000000;
     } else if (calculator.operator == '-'){
-        answer= newFirst - newSecond;
+        answer= (newFirst.toFixed(8) *100000000 - newSecond.toFixed(8)* 100000000) / 100000000;
     } else if (calculator.operator == '*'){
-        answer = newFirst * newSecond;
+        answer = (newFirst.toFixed(8) *100000000 * newSecond.toFixed(8)* 100000000) / 100000000;
     } else if (calculator.operator == '/'){
-        answer= newFirst / newSecond;
+        answer= (newFirst.toFixed(8) *100000000 / newSecond.toFixed(8)* 100000000) / 100000000;
     }
     display.innerText=answer;
+    calculator.answer=answer;
+    console.log(calculator);
     console.log(answer);
 }
 
 function clr(){
     document.querySelector('#display').innerText ="0";
+    calculator.answer="0";
+    calculator.firstNumber="0";
+    calculator.operator= null;
+    calculator.secondNumber= "0";
+    console.log(calculator);
 }
 
 
