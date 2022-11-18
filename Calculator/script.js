@@ -11,10 +11,14 @@ var answer= 0;
 
 
 var display= document.querySelector('#display');
+var decimal= document.getElementById('decimal');
 
 function press(num){
     if(display.innerText=="0" || calculator.answer>0){
         display.innerText ="";
+    }
+    if(num== "."){
+        decimal.disabled = true;
     }
     calculator.answer="0";
     display.innerText += num;
@@ -25,6 +29,7 @@ function setOP(op){
     calculator.firstNumber= display.innerText;
     console.log(calculator);
     display.innerText= "0";
+    decimal.disabled = false;
 }
 
 function calculate(){
