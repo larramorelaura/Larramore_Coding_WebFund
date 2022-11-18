@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Liking Likes</title>
+</head>
+<body>
+    <h1>Network</h1>
+    <h2>Your Feed</h2>
+    <div class="feed">
+    
+        <div class="profile">
+            <img class="profile-pic" src="images/blank-profile-pic.png" alt="profile picture">
+            <p><a href="#">Add an avatar</a></p>
+            <h3>James Doe</h3>
+        </div>
+        
+        <div class="friends">
+            <div class="friend">
+                <div class="friend-header">
+                    <h4>Neil M</h4>
+                    <p class="likes"><span id="counter">9</span> like(s)</p>
+                    <button class="like-button" onclick="addLikes('#counter')">Like</button>
+                </div>
+                <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </div>
+            <div class="friend">
+                <div class="friend-header">
+                    <h4>Nichole K</h4>
+                    <p class="likes"><span id="counter2">12</span> like(s)</p>
+                    <button class="like-button" onclick="addLikes('#counter2')">Like</button>
+                </div>
+                <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+            </div>
+            <div class="friend">
+                <div class="friend-header">
+                    <h4>Jim R</h4>
+                    <p class="likes"><span id="counter3">9</span> like(s)</p>
+                    <button class="like-button" onclick="addLikes('#counter3')">Like</button>
+                </div>
+                <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

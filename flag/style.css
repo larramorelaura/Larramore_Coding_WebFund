@@ -1,0 +1,49 @@
+.flag {
+    width: 800px;
+    height: 515px;
+    border: 2px solid black;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    height: 290px;
+}
+
+.cross{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(75, 75, 249);
+    margin: 0 66px 66px 0;
+}
+
+.stripes{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    background-color: rgb(75, 75, 249);
+    width: 574px;
+    height: 45px;
+    margin: 0 0 45px -66px;
+}
+
+.row-2{
+   
+        background-color: rgb(75, 75, 249);
+        width: 800px;
+        height: 45px;
+        margin: 0 0 45px 0;
+ 
+}

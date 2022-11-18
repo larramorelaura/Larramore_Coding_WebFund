@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.info{
+    width: 25%;
+    height: 100px;
+    border: 2px solid black;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 10px 30px 10px;
+    align-items: center;
+}
+
+.like-button{
+    width: 60px;
+    background-color: rgb(202, 157, 42);
+    box-shadow: 8px 4px 4px black;
+}

@@ -1,0 +1,39 @@
+.test{
+    display: flex;
+    justify-content: left;
+
+    flex-direction: column;
+}
+
+.search{
+    border: 2px solid turquoise;
+    border-radius:15px;
+    background-color: rgb(252, 238, 238);
+    color: turquoise;
+    width: 100px;
+    font-weight: bold;
+    margin: 10px 10px 10px 10px;
+    padding: 3px;
+}
+
+.plus{
+    background-color: turquoise;
+    color: white;
+    border-radius: 50%;
+    border: 2px solid turquoise;
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+    margin: 10px 10px 10px 10px;
+    padding: 3px;
+}
+
+.create{
+    background-color: rgb(83, 83, 213);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 12px 5px 5px black;
+    margin: 10px 10px 10px 10px;
+    width: 150px;
+    padding: 3px;
+}

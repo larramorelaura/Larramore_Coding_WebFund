@@ -1,0 +1,177 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    background-color: #333333;
+    align-items: center;
+    color: white;
+    margin: 0 15px 0 0;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1{
+    color: white;
+    margin: 0 0 0 100px;
+}
+
+
+ul{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 0 0 20px;
+}
+
+.signout{
+    background-color: rgb(14, 180, 164);
+    margin: 2px 100px 2px 2px;
+    box-shadow: 8px 3px 3px black;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+#user-bar{
+    background-color: rgb(14, 180, 164);
+    width:100%;
+    height: 70px;
+}
+
+.mainprofile{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: -35px 0 0 20px;
+}
+
+.user-card{
+    border: 3px solid rgb(192, 190, 190);
+    margin: 0 0 30px 0;
+}
+
+.col{
+    flex: 2;
+    margin: 0 0 0 100px;
+}
+
+.col-2{
+    flex: 1;
+    margin: 0 100px 0 0;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+.location{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dates{
+    color: gray;
+}
+
+.edit{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about{
+    border: 3px solid rgb(192, 190, 190);
+
+}
+
+.small{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:rgb(74, 71, 71);
+    margin: 4px;
+}
+
+.requests{
+    border: 3px solid rgb(192, 190, 190);
+    margin: 0 0 30px 10px;
+}
+
+.request{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.profile-info{
+    display: flex;
+    align-items: center;
+}
+
+.numbers{
+    background-color: rgb(150, 143, 143);
+    border-radius: 40%;
+    margin: 0 10px 0 0;
+    padding: 4px;
+}
+
+h4{
+    color: white;
+    background-color: rgb(74, 71, 71);
+    padding: 4px;
+    margin: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.connection{
+    border: 2px solid rgb(192,190,190);
+    margin: 0 0 0 10px;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+}
+
+#connection-list{
+    padding: 10px;
+}
+
+.view{
+    border-top: 3px solid rgb(192, 190, 190);
+    margin: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 8px;
+}
+
+p{
+    margin: 0;
+}
