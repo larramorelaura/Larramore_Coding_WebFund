@@ -63,7 +63,7 @@ function calculate(){
     } else if (calculator.operator == '*'){
         answer = ((newFirst.toFixed(8) *100000000)/ 100000000 * (newSecond.toFixed(8)* 100000000)/ 100000000) ;
     } else if (calculator.operator == '/'){
-        answer= ((newFirst.toFixed(8) *100000000) / (newSecond.toFixed(8)* 100000000))/ 100000000;
+        answer= ((newFirst * 100000000) / (newSecond * 100000000))/ 100000000;
     }
     display.innerText=answer;
     calculator.answer=answer;

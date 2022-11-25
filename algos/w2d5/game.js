@@ -17,19 +17,23 @@ function render(theDojo) {
 
   for(var i=0; i<theDojo.length; i++) {
     for(var j=0; j<theDojo[i].length; j++) {
-      if(mineCounter < 10 && !(theDojo[i].includes(1))){
-        theDojo[i][j]=Math.round(Math.random());
-        if(theDojo[i][j]==1){
-          mineCounter++;
-        }
-      }
-        else{theDojo[i][j]=0}
+      theDojo[i][j]=0;
       result += `<button class="tatami" onclick="howMany(${i}, ${j}, this); restart(${i}, ${j}, this);"></button>`;
     }
+  }
+  while(mineCounter<10){
+    var randomPlace1 =Math.floor(Math.random()*theDojo.length);
+    var randomPlace2= Math.floor(Math.random()*theDojo.length);
+    console.log(randomPlace1, randomPlace2, theDojo[randomPlace1][randomPlace2]);
+    if (theDojo[randomPlace1][randomPlace2] != 1){
+      theDojo[randomPlace1][randomPlace2]= 1;
+      mineCounter++;
+    } 
   }
   console.log(theDojo);
   return result;
 }
+
     
 // TODO - Make this function tell us how many ninjas are hiding 
 //        under the adjacent (all sides and corners) squares.
